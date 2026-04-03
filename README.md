@@ -18,7 +18,7 @@ Key features include:
 ## 🚀 Installation  
 
 ### Requirements  
-- Python 3.9+  
+- Python 3.10+  
 - [PyTorch](https://pytorch.org/) with CUDA (if GPU available)  
 - Hugging Face Transformers  
 - Datasets + Evaluation libraries  
@@ -45,7 +45,6 @@ WhisperBERT-AD/
 │── models/           # Saved model outputs
 │── results/          # Experimental results 
 │── src/              # Model Source code
-│── requirements.txt
 │── README.md
 │── run.py                    
 ```
@@ -70,6 +69,11 @@ data/
 ### Training
 ```bash
 python run.py --config "configs/VAS_AudioClassifier.yaml"
+```
+### Gemini Zero-shot
+Add your "GEMINI_API_KEY" in .env file
+```bash
+python gemini.py
 ```
 ## ⭐ Acknowledgements
 - [Optimal Transport Kernel Embedding](https://github.com/claying/OTK)
