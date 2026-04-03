@@ -1,0 +1,22 @@
+[project]
+name = "WhisperBERT-AD"
+version = "0.1.0"
+description = "Multimodal Speech + Text Deep Learning Framework for Alzheimer's Disease Detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.13.0",
+    "datasets>=2.19.1",
+    "google-genai>=1.70.0",
+    "librosa>=0.11.0",
+    "numpy>=2.2.6",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.7.2",
+    "soundfile>=0.13.1",
+    "torch==2.4.1",
+    "transformers>=5.4.0",
+    "wandb>=0.25.1",
+]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu124"
