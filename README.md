@@ -27,7 +27,14 @@ Install dependencies:
 ```bash
 git clone https://github.com/kewending/WhisperBERT-AD.git
 cd WhisperBERT-AD
-pip install -r requirements.txt
+# Ensure uv is installed on your system
+# curl -LsSf https://astral.sh/uv/install.sh | sh
+# Environment Creation
+uv venv
+# Synchronization
+uv sync
+# Activation
+source .venv/bin/activate
 ```
 
 ## 📂 Repository Structure
